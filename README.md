@@ -66,13 +66,13 @@ Endpoint:
       POST /api/signup/
 
 Body:
-
+```bash 
 {
   "username": "esha",
   "password": "password123",
   "email": "esha@example.com"
 }
-
+```
 2️. Login (Get access and refresh tokens)
 
 Endpoint:
@@ -81,26 +81,27 @@ Endpoint:
 
 
 Body:
-
+```bash
 {
   "username": "esha",
   "password": "password123"
 }
 
-
+```
 Response:
-
+```bash 
 {
   "refresh": "<REFRESH_TOKEN>",
   "access": "<ACCESS_TOKEN>"
 }
 
-
+```
 Use the access token in headers for authorized requests:
 
 Authorization: Bearer <ACCESS_TOKEN>
 
 # Core API Endpoints
+```bash
 Endpoint	Method	Auth	Description
 /api/signup/	POST	❌	Register new user
 /api/token/	POST	❌	Obtain JWT tokens
@@ -111,6 +112,7 @@ Endpoint	Method	Auth	Description
 /api/my-bookings/	GET	✅	View your bookings
 /api/bookings/<booking_id>/cancel/	POST	✅	Cancel an existing booking
 
+```
 # Swagger API Documentation
 
 Swagger UI is available at:
@@ -144,11 +146,11 @@ From here, you can:
 
 # Tech Stack
 
-1.Language: Python 3
-2.Framework: Django, Django REST Framework
-3.Auth: SimpleJWT
-4.Docs: drf-yasg (Swagger UI)
-5.Database: SQLite (default, easy setup)
+1. Language: Python 3
+2. Framework: Django, Django REST Framework
+3. Auth: SimpleJWT
+4. Docs: drf-yasg (Swagger UI)
+5. Database: SQLite (default, easy setup)
 
 # Example Workflow
 
