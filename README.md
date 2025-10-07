@@ -180,6 +180,7 @@ curl -X POST http://127.0.0.1:8000/api/shows/1/book/ \
 
 
 # Folder Structure
+```bash 
 backend_assignment/
 │
 ├── movieticket/          # Main Django project
@@ -196,6 +197,7 @@ backend_assignment/
 ├── requirements.txt
 ├── manage.py
 └── README.md
+```
 
 # Conclusion
 
