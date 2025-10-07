@@ -23,36 +23,36 @@ A Django REST Framework-based backend system for managing movies, shows, and sea
 
 **Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/movie-booking-backend.git
-cd movie-booking-backend
-
+          git clone https://github.com/<your-username>/movie-booking-backend.git
+          cd movie-booking-backend
+``` 
 ## Create a virtual environment
 
-python -m venv venv
+          python -m venv venv
 # Activate it
-venv\Scripts\activate    # Windows
+          venv\Scripts\activate    # Windows
 # or
-source venv/bin/activate # macOS/Linux
+          source venv/bin/activate # macOS/Linux
 
 # Install dependencies
 
-pip install -r requirements.txt
+         pip install -r requirements.txt
 
 # Run migrations
 
-python manage.py makemigrations
-python manage.py migrate
+         python manage.py makemigrations
+         python manage.py migrate
 
 # Create a superuser
 
-python manage.py createsuperuser
+         python manage.py createsuperuser
 
 # Run the server
 
-python manage.py runserver
+         python manage.py runserver
 
 Now your backend will be live at:
- http://127.0.0.1:8000/
+          http://127.0.0.1:8000/
 
 # JWT Authentication Guide
 
@@ -63,8 +63,7 @@ The project uses JWT (JSON Web Tokens) for secure authentication, powered by Sim
 
 Endpoint:
 
-POST /api/signup/
-
+      POST /api/signup/
 
 Body:
 
@@ -78,7 +77,7 @@ Body:
 
 Endpoint:
 
-POST /api/token/
+    POST /api/token/
 
 
 Body:
@@ -204,4 +203,4 @@ This project demonstrates a production-ready backend foundation with:
 - Secure JWT authentication
 - RESTful API structure
 - Database transaction handling
--Interactive Swagger documentation
+- Interactive Swagger documentation
